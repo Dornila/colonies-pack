@@ -1,0 +1,222 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "adventure"
+	group: "7EF632FF72129737"
+	icon: {
+		id: "minecraft:diamond_sword"
+	}
+	id: "7C345148ECC0E727"
+	order_index: 4
+	quests: [
+		{
+			icon: {
+				id: "minecraft:iron_sword"
+			}
+			id: "2AC3EE0DD3910B4F"
+			rewards: [{
+				count: 4
+				id: "0642C191A89BAB9B"
+				item: { count: 1, id: "minecraft:iron_ingot" }
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				entity: "minecraft:zombie"
+				id: "75EF0B96AA28DFCD"
+				type: "kill"
+				value: 10L
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2AC3EE0DD3910B4F"]
+			icon: {
+				id: "minecraft:chest"
+			}
+			id: "700A1AB8B52ECA88"
+			tasks: [{
+				id: "00683D54C9ACFC8E"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["700A1AB8B52ECA88"]
+			icon: {
+				id: "artifacts:lucky_scarf"
+			}
+			id: "2FB8790FDCBD98CD"
+			rewards: [{
+				id: "11864B99A73961EB"
+				type: "xp"
+				xp: 300
+			}]
+			tasks: [{
+				entity: "artifacts:mimic"
+				id: "6617E3CF2D3180D4"
+				type: "kill"
+				value: 1L
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2AC3EE0DD3910B4F"]
+			icon: {
+				id: "minecraft:netherrack"
+			}
+			id: "45BC9BA0353614A5"
+			rewards: [{
+				count: 8
+				id: "6335EA222C47D789"
+				item: { count: 1, id: "minecraft:golden_carrot" }
+				type: "item"
+			}]
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "33CBC2DF4353B868"
+				type: "dimension"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["45BC9BA0353614A5"]
+			icon: {
+				id: "minecraft:blaze_powder"
+			}
+			id: "7780E0371A9C8A71"
+			rewards: [{
+				id: "743D40D65DE73D9B"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
+			tasks: [{
+				entity: "cataclysm:ignis"
+				id: "69D115B08F448290"
+				type: "kill"
+				value: 1L
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7780E0371A9C8A71"]
+			icon: {
+				id: "minecraft:netherite_scrap"
+			}
+			id: "46AA5F8E6C7664F7"
+			rewards: [{
+				id: "38A1CCC95FC8B3EF"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
+			tasks: [{
+				entity: "cataclysm:netherite_monstrosity"
+				id: "738D1665A30AC469"
+				type: "kill"
+				value: 1L
+			}]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2FB8790FDCBD98CD"]
+			icon: {
+				id: "minecraft:redstone_block"
+			}
+			id: "5DDAACD331AFF2F9"
+			rewards: [{
+				id: "2A763AF591895D47"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
+			tasks: [{
+				entity: "cataclysm:the_harbinger"
+				id: "1F8089278B68E2F1"
+				type: "kill"
+				value: 1L
+			}]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5DDAACD331AFF2F9"]
+			icon: {
+				id: "minecraft:heart_of_the_sea"
+			}
+			id: "7F143BBC655E84DA"
+			rewards: [{
+				id: "67F80B894F7ECD4D"
+				type: "xp_levels"
+				xp_levels: 20
+			}]
+			tasks: [{
+				entity: "cataclysm:the_leviathan"
+				id: "4EDAD55B786133E5"
+				type: "kill"
+				value: 1L
+			}]
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["46AA5F8E6C7664F7"]
+			icon: {
+				id: "minecraft:ender_eye"
+			}
+			id: "55FC6B151BD0AFFB"
+			tasks: [{
+				dimension: "minecraft:the_end"
+				id: "439C45239D7E61E1"
+				type: "dimension"
+			}]
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["55FC6B151BD0AFFB"]
+			icon: {
+				id: "minecraft:dragon_head"
+			}
+			id: "67A698BAD8D03042"
+			rewards: [{
+				id: "31DF8ACE406E1E33"
+				type: "xp_levels"
+				xp_levels: 30
+			}]
+			tasks: [{
+				entity: "minecraft:ender_dragon"
+				id: "5BC067AFA347E58B"
+				type: "kill"
+				value: 1L
+			}]
+			x: 10.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["67A698BAD8D03042"]
+			icon: {
+				id: "minecraft:end_crystal"
+			}
+			id: "6D4C66D9299954DE"
+			rewards: [{
+				id: "108FC901EB0E401E"
+				type: "xp_levels"
+				xp_levels: 20
+			}]
+			tasks: [{
+				entity: "cataclysm:ender_guardian"
+				id: "5FB86DD66A9EE68D"
+				type: "kill"
+				value: 1L
+			}]
+			x: 12.0d
+			y: 1.0d
+		}
+	]
+}

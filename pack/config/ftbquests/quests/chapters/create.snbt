@@ -1,0 +1,191 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "create"
+	group: "7EF632FF72129737"
+	icon: {
+		id: "create:cogwheel"
+	}
+	id: "386F374098E4F64C"
+	order_index: 2
+	quests: [
+		{
+			icon: {
+				id: "create:andesite_alloy"
+			}
+			id: "2A0481089BD42DFC"
+			rewards: [{
+				count: 8
+				id: "53F1B2E5F512A75B"
+				item: { count: 1, id: "create:andesite_alloy" }
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				count: 16L
+				id: "358FDE88FF6D8A54"
+				item: { count: 1, id: "create:andesite_alloy" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2A0481089BD42DFC"]
+			id: "68EAC7F8353ABF5D"
+			tasks: [{
+				id: "0AC919D6EA65052A"
+				item: { count: 1, id: "create:water_wheel" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2A0481089BD42DFC"]
+			icon: {
+				id: "create:cogwheel"
+			}
+			id: "75113CA9793E2C94"
+			tasks: [{
+				count: 8L
+				id: "5EE679347A5F2C17"
+				item: { count: 1, id: "create:shaft" }
+				type: "item"
+			}
+			{
+				count: 4L
+				id: "78E5EFECEE4DDC8D"
+				item: { count: 1, id: "create:cogwheel" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["75113CA9793E2C94"]
+			id: "73024F86A5FC4B20"
+			tasks: [{
+				id: "33B34BEE674364C0"
+				item: { count: 1, id: "create:goggles" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["68EAC7F8353ABF5D"]
+			id: "39A96316068716BF"
+			tasks: [{
+				id: "446596BFF8B9BEB3"
+				item: { count: 1, id: "create:mechanical_press" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["39A96316068716BF"]
+			icon: {
+				id: "create:mechanical_mixer"
+			}
+			id: "7152673C7D19920E"
+			tasks: [{
+				id: "43A9BCBEA5685FF5"
+				item: { count: 1, id: "create:mechanical_mixer" }
+				type: "item"
+			}
+			{
+				id: "6E6787485004E481"
+				item: { count: 1, id: "create:basin" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7152673C7D19920E"]
+			id: "32777806105AF476"
+			rewards: [{
+				id: "19155C31BF3C85DB"
+				type: "xp"
+				xp: 300
+			}]
+			tasks: [{
+				count: 8L
+				id: "0343E3C2D919A719"
+				item: { count: 1, id: "create:brass_ingot" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["73024F86A5FC4B20"]
+			id: "37583A6ACA21F59E"
+			tasks: [{
+				id: "1A3FC26D3E6B1815"
+				item: { count: 1, id: "create:mechanical_drill" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["32777806105AF476"]
+			id: "57EB35500A50BD82"
+			tasks: [{
+				id: "2F487A81D78AC8E7"
+				item: { count: 1, id: "create:steam_engine" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["32777806105AF476"]
+			id: "6A138F76E7BAE8AC"
+			tasks: [{
+				count: 32L
+				id: "65883A35F9E0F5FF"
+				item: { count: 1, id: "create:track" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["57EB35500A50BD82"]
+			icon: {
+				id: "createaddition:electric_motor"
+			}
+			id: "7E8231D2AE25D321"
+			tasks: [{
+				id: "00385B3659B2F9FA"
+				item: { count: 1, id: "createaddition:alternator" }
+				type: "item"
+			}
+			{
+				id: "3443503605DB8AE7"
+				item: { count: 1, id: "createaddition:electric_motor" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6A138F76E7BAE8AC"]
+			icon: {
+				id: "minecolonies:blockhutwarehouse"
+			}
+			id: "586C928D4F4B155B"
+			tasks: [{
+				id: "7972D1310FDED847"
+				type: "checkmark"
+			}]
+			x: 12.0d
+			y: 1.0d
+		}
+	]
+}

@@ -1,0 +1,2 @@
+resourcePacks:["vanilla","mod_resources","file/Better-Leaves-9.6.zip","file/Fancy Crops v1.3.zip","file/LowOnFire-v26.2.zip","file/FreshAnimations_v1.10.4.zip","file/FA+All_Extensions-v1.8.1.zip","file/colonies-fixes"]
+incompatibleResourcePacks:[]

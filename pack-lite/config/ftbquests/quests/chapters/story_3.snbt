@@ -1,0 +1,268 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "story_3"
+	group: "39116B943AB5A383"
+	icon: {
+		id: "minecraft:white_banner"
+	}
+	id: "511CDD202EEDCF73"
+	order_index: 8
+	quests: [
+		{
+			dependencies: ["371BD318EDEAB94B"]
+			icon: {
+				id: "minecraft:bell"
+			}
+			id: "41FB9A4A36360EC0"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "141831F9606EBF5D"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["41FB9A4A36360EC0"]
+			icon: {
+				id: "minecolonies:blockhutguardtower"
+			}
+			id: "2BB33E7CCC18F395"
+			rewards: [{
+				count: 16
+				id: "5E22DE6386103E6F"
+				item: { count: 1, id: "minecraft:iron_ingot" }
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "minecolonies:minecolonies/build_guard_tower"
+				criterion: ""
+				id: "46F550364AB8A2F4"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2BB33E7CCC18F395"]
+			icon: {
+				id: "minecraft:iron_chestplate"
+			}
+			id: "614909EB879D3172"
+			rewards: [{
+				id: "3D71A2FED63E4F68"
+				item: { count: 1, id: "minecraft:iron_sword" }
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "minecolonies:military/army_8"
+				criterion: ""
+				id: "27FB89A759A80FB9"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["41FB9A4A36360EC0"]
+			icon: {
+				id: "minecraft:player_head"
+			}
+			id: "1282D31284BDFAC3"
+			rewards: [{
+				count: 24
+				id: "2B93D81463836678"
+				item: { count: 1, id: "minecraft:emerald" }
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "minecolonies:minecolonies/colony_population_25"
+				criterion: ""
+				id: "11044C2AF474DAD7"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["41FB9A4A36360EC0"]
+			icon: {
+				id: "minecraft:white_banner"
+			}
+			id: "4CA0E8A286ABE5E6"
+			rewards: [{
+				id: "099E5D04CCA7589E"
+				type: "xp"
+				xp: 500
+			}]
+			tasks: [{
+				advancement: "minecraft:adventure/voluntary_exile"
+				criterion: ""
+				id: "148ED8F55C6F49F8"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["614909EB879D3172", "4CA0E8A286ABE5E6"]
+			icon: {
+				id: "minecraft:bell"
+			}
+			id: "47FEFDF2B8B8E560"
+			rewards: [{
+				id: "6018E986BAB2B7AA"
+				item: { count: 1, id: "minecraft:totem_of_undying" }
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "minecraft:adventure/hero_of_the_village"
+				criterion: ""
+				id: "27D6F7540C717B1B"
+				type: "advancement"
+			}]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["47FEFDF2B8B8E560"]
+			icon: {
+				id: "minecraft:stone_bricks"
+			}
+			id: "1F6B560AA3643289"
+			rewards: [{
+				id: "2D21C44D533E51FE"
+				type: "xp"
+				xp: 800
+			}]
+			tasks: [{
+				advancement: "dungeons_arise:find_illager_fort"
+				criterion: ""
+				id: "5730518F14B5D8BC"
+				type: "advancement"
+			}]
+			x: 12.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["47FEFDF2B8B8E560"]
+			icon: {
+				id: "minecraft:iron_sword"
+			}
+			id: "5F45433066AEB4F5"
+			shape: "square"
+			size: 0.8d
+			tasks: [{
+				advancement: "nova_structures:adventure/find_illager_mansion"
+				criterion: ""
+				id: "548B1E4F6E3DD576"
+				type: "advancement"
+			}
+			{
+				entity: "minecraft:evoker"
+				id: "133E7DC975F938F2"
+				type: "kill"
+				value: 1L
+			}]
+			x: 10.5d
+			y: 1.3d
+		}
+		{
+			dependencies: ["47FEFDF2B8B8E560"]
+			icon: {
+				id: "minecraft:shield"
+			}
+			id: "086A097C050F8E1E"
+			shape: "square"
+			size: 0.8d
+			tasks: [{
+				advancement: "nova_structures:adventure/find_illager_mansion"
+				criterion: ""
+				id: "436ABB230E4490AC"
+				type: "advancement"
+			}
+			{
+				id: "17F9A39C8B75F1F2"
+				type: "checkmark"
+			}]
+			x: 10.5d
+			y: 2.7d
+		}
+		{
+			dependencies: ["5F45433066AEB4F5", "086A097C050F8E1E"]
+			min_required_dependencies: 1
+			icon: {
+				id: "minecraft:dark_oak_log"
+			}
+			id: "16A54AB8ED64039B"
+			rewards: [{
+				count: 4
+				id: "75C859260DC9C0E2"
+				item: { count: 1, id: "minecraft:diamond" }
+				type: "item"
+			}]
+			tasks: [{
+				id: "4C688C3AE0C70722"
+				type: "checkmark"
+			}]
+			x: 12.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1F6B560AA3643289", "16A54AB8ED64039B", "1282D31284BDFAC3"]
+			icon: {
+				id: "minecraft:book"
+			}
+			id: "68F2A2A5B24F9821"
+			rewards: [{
+				id: "37C1490B0749DD3E"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+			tasks: [{
+				id: "0F353CCD22A27330"
+				type: "checkmark"
+			}]
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["68F2A2A5B24F9821"]
+			icon: {
+				id: "minecraft:netherite_scrap"
+			}
+			id: "4FC5711561F6A307"
+			rewards: [{
+				id: "639160B6C7CAA156"
+				type: "xp_levels"
+				xp_levels: 5
+			}
+			{
+				auto: "invisible"
+				command: "/scoreboard objectives add valdgard dummy"
+				id: "3D33AA1563189590"
+				permission_level: 2
+				silent: true
+				type: "command"
+			}
+			{
+				auto: "invisible"
+				command: "/scoreboard players set {p} valdgard 4"
+				id: "03F2B7291F14682C"
+				permission_level: 2
+				silent: true
+				type: "command"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "789F19FB44E5E252"
+				type: "checkmark"
+			}]
+			x: 18.0d
+			y: 0.0d
+		}
+	]
+}

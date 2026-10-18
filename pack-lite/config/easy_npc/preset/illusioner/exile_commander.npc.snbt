@@ -1,0 +1,46 @@
+{
+  PresetMetadata:{
+    author:"Colonies",
+    category:"Quest",
+    created:1792000000000L,
+    description:"Командир изгнанников. Поставьте у ворот колонии или у крепости.",
+    entityTypeId:"easy_npc:illusioner",
+    modified:1792000000000L,
+    name:"Командир Серых плащей",
+    variantType:"ILLUSIONER",
+    version:"1.0.0"
+  },
+  data:{
+    ActionData:{
+      ActionEventSet:{
+        ON_INTERACTION:[{
+          Type:"OPEN_DEFAULT_DIALOG"
+        }]
+      }
+    },
+    ArmorItems:[{},{},{Count:1b,id:"minecraft:iron_chestplate"},{}],
+    CustomName:'{"color":"#9AA3AD","text":"Командир Серых плащей"}',
+    DialogData:{
+      DialogDataSet:[{Buttons:[{Actions:[{Type:"CLOSE_DIALOG"}],Label:"button_bye",Name:"До встречи"}],Label:"default",Name:"Чужак",Priority:1,Texts:[{Text:"Ещё один строитель. Уходи с этой земли, @initiator. Она не для вас.\\n\\nМы помним, чем кончился последний город."}]},{Buttons:[{Actions:[{Type:"CLOSE_DIALOG"}],Label:"button_bye",Name:"До встречи"}],Conditions:[{Name:"valdgard",Operation:"EQUALS",Type:"SCOREBOARD",Value:2}],Label:"stage_2",Name:"Подозрение",Priority:12,Texts:[{Text:"Ты роешься в старых склепах, @initiator. Ищешь картографа?\\n\\nМы не трогали его. Он сам приходил к нам. Больше я тебе ничего не скажу."}]},{Buttons:[{Actions:[{Type:"CLOSE_DIALOG"}],Label:"button_bye",Name:"До встречи"}],Conditions:[{Name:"valdgard",Operation:"EQUALS",Type:"SCOREBOARD",Value:3}],Label:"stage_3",Name:"Командир",Priority:13,Texts:[{Text:"Ты разбил мой отряд и нашёл мою крепость. Значит, ты сильнее тех, кто был до тебя.\\n\\nМы стража Вальдгарда, @initiator. Мы убили короля, когда он открыл печати, и с тех пор держим эту землю. Таков последний приказ: никаких новых городов, пока Древние живы.\\n\\nКартограф понял это. Поймёшь ли ты?"}]},{Buttons:[{Actions:[{Type:"CLOSE_DIALOG"}],Label:"button_bye",Name:"До встречи"}],Conditions:[{Name:"valdgard",Operation:"EQUALS",Type:"SCOREBOARD",Value:4}],Label:"stage_4",Name:"Присяга",Priority:14,Texts:[{Text:"Четыре стража… Ты делаешь то, на что у нас не хватило сил за сто лет.\\n\\nЯ принёс последнюю тетрадь картографа. Он отдал её мне и ушёл к пятой печати. Один."}]},{Buttons:[{Actions:[{Type:"CLOSE_DIALOG"}],Label:"button_bye",Name:"До встречи"}],Conditions:[{Name:"valdgard",Operation:"EQUALS",Type:"SCOREBOARD",Value:5}],Label:"stage_5",Name:"За краем",Priority:15,Texts:[{Text:"Если ты вернёшься из-за края мира, @initiator, наша присяга закончится.\\n\\nИди. Стража Вальдгарда будет ждать у ворот твоего города."}]},{Buttons:[{Actions:[{Type:"CLOSE_DIALOG"}],Label:"button_bye",Name:"До встречи"}],Conditions:[{Name:"valdgard",Operation:"EQUALS",Type:"SCOREBOARD",Value:6}],Label:"stage_6",Name:"Союз",Priority:16,Texts:[{Text:"Последний страж пал. Приказ исполнен.\\n\\nМы складываем оружие, @initiator. Если твоему городу нужна стража, она у него есть."}]}],
+      Type:"STANDARD"
+    },
+    EasyNPCVersion:3,
+    HandItems:[{Count:1b,id:"minecraft:iron_sword"},{}],
+    Invulnerable:1b,
+    ObjectiveData:{
+      HasObjectives:1b,
+      ObjectiveDataSet:[{
+        Type:"LOOK_AT_PLAYER"
+      },{
+        Type:"LOOK_AT_RESET"
+      }]
+    },
+    PersistenceRequired:1b,
+    PresetUUID:[I;2146235424,2087403614,-1800363527,-935411921],
+    SkinData:{
+      Type:"DEFAULT"
+    },
+    VariantType:"ILLUSIONER",
+    id:"easy_npc:illusioner"
+  }
+}

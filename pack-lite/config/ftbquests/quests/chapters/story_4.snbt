@@ -1,0 +1,600 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "story_4"
+	group: "39116B943AB5A383"
+	icon: {
+		id: "cataclysm:ignitium_ingot"
+	}
+	id: "56DA8F1FC6CEDD4F"
+	order_index: 9
+	quests: [
+		{
+			dependencies: ["4FC5711561F6A307"]
+			icon: {
+				id: "minecraft:nether_star"
+			}
+			id: "453BFE5C4F58F3CE"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "55C59FFB6BBCFD61"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["453BFE5C4F58F3CE"]
+			icon: {
+				id: "minecraft:obsidian"
+			}
+			id: "552D918C2B44EED7"
+			rewards: [{
+				count: 8
+				id: "43DEE2BA3F312742"
+				item: { count: 1, id: "minecraft:fire_charge" }
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "minecraft:story/enter_the_nether"
+				criterion: ""
+				id: "4CCEEFDC49071A5A"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["552D918C2B44EED7"]
+			icon: {
+				id: "minecraft:blackstone"
+			}
+			id: "26BF9E72CF451681"
+			rewards: [{
+				id: "07BAA63AF48AA701"
+				type: "xp"
+				xp: 800
+			}]
+			tasks: [{
+				advancement: "cataclysm:find_burning_arena"
+				criterion: ""
+				id: "14BA28CB0DD1519C"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["26BF9E72CF451681"]
+			icon: {
+				id: "minecraft:iron_sword"
+			}
+			id: "224180DCC6C8B07D"
+			shape: "square"
+			size: 0.8d
+			tasks: [{
+				advancement: "cataclysm:kill_ignis"
+				criterion: ""
+				id: "53ED080E46011B3D"
+				type: "advancement"
+			}]
+			x: 7.5d
+			y: -4.7d
+		}
+		{
+			dependencies: ["26BF9E72CF451681"]
+			icon: {
+				id: "minecraft:shield"
+			}
+			id: "1B3ACC3C2FD1E837"
+			shape: "square"
+			size: 0.8d
+			tasks: [{
+				id: "30A45968C87CFA2A"
+				type: "checkmark"
+			}]
+			x: 7.5d
+			y: -3.3d
+		}
+		{
+			dependencies: ["224180DCC6C8B07D", "1B3ACC3C2FD1E837"]
+			min_required_dependencies: 1
+			icon: {
+				id: "minecraft:blaze_powder"
+			}
+			id: "2D4B75E1F7EEBE26"
+			rewards: [{
+				id: "050FE0E443B83EA7"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
+			tasks: [{
+				id: "35B8AAE5348337A7"
+				type: "checkmark"
+			}]
+			x: 9.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["552D918C2B44EED7"]
+			icon: {
+				id: "minecraft:soul_soil"
+			}
+			id: "3D7512F73F8F0E0D"
+			rewards: [{
+				id: "4831EBF978D0A759"
+				type: "xp"
+				xp: 800
+			}]
+			tasks: [{
+				advancement: "cataclysm:find_soul_black_smith"
+				criterion: ""
+				id: "46AAF7CF6E4ABA3D"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3D7512F73F8F0E0D"]
+			icon: {
+				id: "minecraft:iron_sword"
+			}
+			id: "75F53BEDF3D3E45A"
+			shape: "square"
+			size: 0.8d
+			tasks: [{
+				advancement: "cataclysm:kill_monstrosity"
+				criterion: ""
+				id: "4A88D4F9419F3A37"
+				type: "advancement"
+			}]
+			x: 7.5d
+			y: -2.7d
+		}
+		{
+			dependencies: ["3D7512F73F8F0E0D"]
+			icon: {
+				id: "minecraft:shield"
+			}
+			id: "3B5AEDA55E704283"
+			shape: "square"
+			size: 0.8d
+			tasks: [{
+				id: "6AD90B78C36BEBBE"
+				type: "checkmark"
+			}]
+			x: 7.5d
+			y: -1.3d
+		}
+		{
+			dependencies: ["75F53BEDF3D3E45A", "3B5AEDA55E704283"]
+			min_required_dependencies: 1
+			icon: {
+				id: "minecraft:netherite_scrap"
+			}
+			id: "0078FFFD3DBDFA71"
+			rewards: [{
+				id: "2F5B6B5E3B6EC458"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
+			tasks: [{
+				id: "108DC926F61BA588"
+				type: "checkmark"
+			}]
+			x: 9.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["453BFE5C4F58F3CE"]
+			icon: {
+				id: "minecraft:redstone_block"
+			}
+			id: "363A071872165639"
+			rewards: [{
+				id: "60B8DA3B58FAE54B"
+				type: "xp"
+				xp: 800
+			}]
+			tasks: [{
+				advancement: "cataclysm:find_ancient_factory"
+				criterion: ""
+				id: "3A29EFD4912E6B1E"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["363A071872165639"]
+			icon: {
+				id: "minecraft:iron_sword"
+			}
+			id: "0438E24DF914A0A1"
+			shape: "square"
+			size: 0.8d
+			tasks: [{
+				advancement: "cataclysm:kill_harbinger"
+				criterion: ""
+				id: "5F8FBA541AEE9898"
+				type: "advancement"
+			}]
+			x: 7.5d
+			y: 1.3d
+		}
+		{
+			dependencies: ["363A071872165639"]
+			icon: {
+				id: "minecraft:shield"
+			}
+			id: "10E373A76ADC389A"
+			shape: "square"
+			size: 0.8d
+			tasks: [{
+				id: "2A55856193BEBD2D"
+				type: "checkmark"
+			}]
+			x: 7.5d
+			y: 2.7d
+		}
+		{
+			dependencies: ["0438E24DF914A0A1", "10E373A76ADC389A"]
+			min_required_dependencies: 1
+			icon: {
+				id: "minecraft:observer"
+			}
+			id: "476720ACFF28139D"
+			rewards: [{
+				id: "07E226FD3D6529D0"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
+			tasks: [{
+				id: "4143BDF13A84DE68"
+				type: "checkmark"
+			}]
+			x: 9.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["453BFE5C4F58F3CE"]
+			icon: {
+				id: "minecraft:prismarine_bricks"
+			}
+			id: "5B4EF1D088769941"
+			rewards: [{
+				id: "4A2D57DBEBD4C34D"
+				type: "xp"
+				xp: 800
+			}]
+			tasks: [{
+				advancement: "cataclysm:find_sunken_city"
+				criterion: ""
+				id: "0FABBB74FFEC1DCB"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5B4EF1D088769941"]
+			icon: {
+				id: "minecraft:iron_sword"
+			}
+			id: "704235305AB24600"
+			shape: "square"
+			size: 0.8d
+			tasks: [{
+				advancement: "cataclysm:kill_leviathan"
+				criterion: ""
+				id: "0CC64274E50AD3CC"
+				type: "advancement"
+			}]
+			x: 7.5d
+			y: 3.3d
+		}
+		{
+			dependencies: ["5B4EF1D088769941"]
+			icon: {
+				id: "minecraft:shield"
+			}
+			id: "3F096CF6EB4E375B"
+			shape: "square"
+			size: 0.8d
+			tasks: [{
+				id: "0E4D06BD409DDDDA"
+				type: "checkmark"
+			}]
+			x: 7.5d
+			y: 4.7d
+		}
+		{
+			dependencies: ["704235305AB24600", "3F096CF6EB4E375B"]
+			min_required_dependencies: 1
+			icon: {
+				id: "minecraft:heart_of_the_sea"
+			}
+			id: "5950635EFD99990E"
+			rewards: [{
+				id: "4AE4724BA3AF3810"
+				type: "xp_levels"
+				xp_levels: 20
+			}]
+			tasks: [{
+				id: "3B618FFE33AD9E8A"
+				type: "checkmark"
+			}]
+			x: 9.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2D4B75E1F7EEBE26", "0078FFFD3DBDFA71", "476720ACFF28139D", "5950635EFD99990E"]
+			icon: {
+				id: "minecraft:book"
+			}
+			id: "5C0D0D4DEBC97B54"
+			rewards: [{
+				id: "6C04CB74B1621B3E"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+			tasks: [{
+				id: "4047EBB28BC914CA"
+				type: "checkmark"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5C0D0D4DEBC97B54"]
+			icon: {
+				id: "minecraft:ender_eye"
+			}
+			id: "2626A1AC7014C12D"
+			rewards: [{
+				id: "33D82D5496128226"
+				type: "xp_levels"
+				xp_levels: 5
+			}
+			{
+				auto: "invisible"
+				command: "/scoreboard objectives add valdgard dummy"
+				id: "536C0D3C459FA34C"
+				permission_level: 2
+				silent: true
+				type: "command"
+			}
+			{
+				auto: "invisible"
+				command: "/scoreboard players set {p} valdgard 5"
+				id: "2DD709653234384C"
+				permission_level: 2
+				silent: true
+				type: "command"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "0825D8ECA02AFCB2"
+				type: "checkmark"
+			}]
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["453BFE5C4F58F3CE"]
+			icon: {
+				id: "minecraft:packed_ice"
+			}
+			id: "06DA42A52AD5B69E"
+			rewards: [{
+				id: "150CC9DEDB941735"
+				type: "xp"
+				xp: 500
+			}]
+			tasks: [{
+				advancement: "cataclysm:find_frosted_prison"
+				criterion: ""
+				id: "07DA3C048637CAC6"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["06DA42A52AD5B69E"]
+			icon: {
+				id: "minecraft:iron_sword"
+			}
+			id: "2862BD966B72D0E0"
+			shape: "square"
+			size: 0.8d
+			tasks: [{
+				advancement: "cataclysm:kill_maledictus"
+				criterion: ""
+				id: "3510A988DFD34E63"
+				type: "advancement"
+			}]
+			x: 4.5d
+			y: 6.3d
+		}
+		{
+			dependencies: ["06DA42A52AD5B69E"]
+			icon: {
+				id: "minecraft:shield"
+			}
+			id: "2576DE44722CFB55"
+			shape: "square"
+			size: 0.8d
+			tasks: [{
+				id: "471C031BCAF86074"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 7.7d
+		}
+		{
+			dependencies: ["2862BD966B72D0E0", "2576DE44722CFB55"]
+			min_required_dependencies: 1
+			icon: {
+				id: "minecraft:soul_lantern"
+			}
+			id: "512BED9634E91F3D"
+			rewards: [{
+				id: "02BD26FD01DC37A2"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+			tasks: [{
+				id: "2DDEC4FCFDD9D51A"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["453BFE5C4F58F3CE"]
+			icon: {
+				id: "minecraft:chiseled_sandstone"
+			}
+			id: "327D3ECC3D507730"
+			rewards: [{
+				id: "4E8536D0D19C4DC7"
+				type: "xp"
+				xp: 500
+			}]
+			tasks: [{
+				advancement: "cataclysm:find_cursed_pyramid"
+				criterion: ""
+				id: "1BE75B8816894D44"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["327D3ECC3D507730"]
+			icon: {
+				id: "minecraft:iron_sword"
+			}
+			id: "1A5895413D99199A"
+			shape: "square"
+			size: 0.8d
+			tasks: [{
+				advancement: "cataclysm:kill_remnant"
+				criterion: ""
+				id: "1C9D0D43CD6FA63D"
+				type: "advancement"
+			}]
+			x: 4.5d
+			y: 8.3d
+		}
+		{
+			dependencies: ["327D3ECC3D507730"]
+			icon: {
+				id: "minecraft:shield"
+			}
+			id: "201DC9DFA137709D"
+			shape: "square"
+			size: 0.8d
+			tasks: [{
+				id: "64E9A1B911604ED1"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 9.7d
+		}
+		{
+			dependencies: ["1A5895413D99199A", "201DC9DFA137709D"]
+			min_required_dependencies: 1
+			icon: {
+				id: "minecraft:bone_block"
+			}
+			id: "730530B9F089EAF8"
+			rewards: [{
+				id: "15A2B1638D992FFE"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+			tasks: [{
+				id: "4AD51E45B2FFE6A4"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["453BFE5C4F58F3CE"]
+			icon: {
+				id: "minecraft:dark_prismarine"
+			}
+			id: "3A68658248A62C2D"
+			rewards: [{
+				id: "2672F37ACDF6FF5D"
+				type: "xp"
+				xp: 500
+			}]
+			tasks: [{
+				advancement: "cataclysm:find_acropolis"
+				criterion: ""
+				id: "370AEE59D7FF720B"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["3A68658248A62C2D"]
+			icon: {
+				id: "minecraft:iron_sword"
+			}
+			id: "64457C56B9D94320"
+			shape: "square"
+			size: 0.8d
+			tasks: [{
+				advancement: "cataclysm:kill_scylla"
+				criterion: ""
+				id: "0F0EB428B75B4200"
+				type: "advancement"
+			}]
+			x: 4.5d
+			y: 10.3d
+		}
+		{
+			dependencies: ["3A68658248A62C2D"]
+			icon: {
+				id: "minecraft:shield"
+			}
+			id: "157AC6E5B4689123"
+			shape: "square"
+			size: 0.8d
+			tasks: [{
+				id: "276F5F46A19CCF7C"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 11.7d
+		}
+		{
+			dependencies: ["64457C56B9D94320", "157AC6E5B4689123"]
+			min_required_dependencies: 1
+			icon: {
+				id: "minecraft:trident"
+			}
+			id: "300AB4E90349B286"
+			rewards: [{
+				id: "1F72EBCD36057101"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+			tasks: [{
+				id: "721D8696BC7CC647"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 11.0d
+		}
+	]
+}

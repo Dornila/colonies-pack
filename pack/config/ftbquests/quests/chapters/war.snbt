@@ -1,0 +1,141 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "war"
+	group: "7EF632FF72129737"
+	icon: {
+		id: "createbigcannons:cannon_mount"
+	}
+	id: "1B45D2CCDCFEECA9"
+	order_index: 3
+	quests: [
+		{
+			id: "583822B286EBAD32"
+			rewards: [{
+				count: 16
+				id: "3DC645A33317663A"
+				item: { count: 1, id: "cgs:paper_cartridge" }
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "534C015A14F498D1"
+				item: { count: 1, id: "cgs:flintlock" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["583822B286EBAD32"]
+			id: "4A98BBC93D5823A6"
+			rewards: [{
+				count: 24
+				id: "736F3D60B0D54AC2"
+				item: { count: 1, id: "cgs:round_revolver" }
+				type: "item"
+			}]
+			tasks: [{
+				id: "0D5E0EA7321B8DA8"
+				item: { count: 1, id: "cgs:revolver" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["583822B286EBAD32"]
+			id: "4F18FDCA0A7E2654"
+			rewards: [{
+				count: 16
+				id: "5B5AE8A603C93BB4"
+				item: { count: 1, id: "cgs:round_shotgun" }
+				type: "item"
+			}]
+			tasks: [{
+				id: "580E392941FD1DA2"
+				item: { count: 1, id: "cgs:shotgun" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4A98BBC93D5823A6", "4F18FDCA0A7E2654"]
+			id: "5D46F3B1930C71CC"
+			tasks: [{
+				id: "5AE979DC2EF62327"
+				item: { count: 1, id: "cgs:gatling" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5D46F3B1930C71CC"]
+			icon: {
+				id: "createbigcannons:cannon_mount"
+			}
+			id: "46C5AE843A765A83"
+			tasks: [{
+				id: "52AB6B06B3BA99E1"
+				item: { count: 1, id: "createbigcannons:cannon_mount" }
+				type: "item"
+			}
+			{
+				id: "430519B28E5E36FC"
+				item: { count: 1, id: "createbigcannons:cast_iron_cannon_barrel" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5D46F3B1930C71CC"]
+			id: "379CC4B82F1E0797"
+			rewards: [{
+				id: "74CC7DAAEC37F3B3"
+				type: "xp"
+				xp: 300
+			}]
+			tasks: [{
+				id: "71DF113871625686"
+				item: { count: 1, id: "aeronautics:adjustable_burner" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["379CC4B82F1E0797"]
+			id: "26A5CC47A995FD6F"
+			tasks: [{
+				id: "6471315710E35000"
+				item: { count: 1, id: "aeronautics:andesite_propeller" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["26A5CC47A995FD6F"]
+			icon: {
+				id: "droneworks:drone_core"
+			}
+			id: "736D1BFBEFEB5FC0"
+			tasks: [{
+				id: "03342CDC9BD6495B"
+				item: { count: 1, id: "droneworks:drone_core" }
+				type: "item"
+			}
+			{
+				id: "5F8E16D2236F4C9D"
+				item: { count: 1, id: "droneworks:drone_remote_control" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 1.0d
+		}
+	]
+}

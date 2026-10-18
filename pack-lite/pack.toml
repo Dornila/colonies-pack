@@ -1,0 +1,13 @@
+name = "Colonies Lite"
+author = "Dornila"
+version = "1.0.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "456b960b5d83b9684cdc0944340180dd6a0655fb4560af71c14685d706e05300"
+
+[versions]
+minecraft = "1.21.1"
+neoforge = "21.1.262"

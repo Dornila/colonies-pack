@@ -1,0 +1,165 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "story_2"
+	group: "39116B943AB5A383"
+	icon: {
+		id: "minecraft:filled_map"
+	}
+	id: "0CE94CE80A768C38"
+	order_index: 7
+	quests: [
+		{
+			dependencies: ["7A4E2AB5077ED088"]
+			icon: {
+				id: "minecraft:iron_pickaxe"
+			}
+			id: "0678A68B64EB86F1"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "080A6B9D5C6AEBDF"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0678A68B64EB86F1"]
+			icon: {
+				id: "minecraft:mossy_cobblestone"
+			}
+			id: "6D944F176D3EE4A9"
+			rewards: [{
+				count: 32
+				id: "686742E8C605206C"
+				item: { count: 1, id: "minecraft:torch" }
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "betterdungeons:small_dungeon"
+				criterion: ""
+				id: "54ACD7016A7924D0"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0678A68B64EB86F1"]
+			icon: {
+				id: "minecraft:diamond"
+			}
+			id: "19A061917D996E72"
+			rewards: [{
+				id: "359E9F46D8F356D6"
+				type: "xp"
+				xp: 500
+			}]
+			tasks: [{
+				advancement: "minecraft:story/mine_diamond"
+				criterion: ""
+				id: "1460C665FFE0072C"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6D944F176D3EE4A9", "19A061917D996E72"]
+			icon: {
+				id: "minecraft:crossbow"
+			}
+			id: "4D0B5F60919F1219"
+			rewards: [{
+				count: 32
+				id: "3D4BF1FB46AF4B29"
+				item: { count: 1, id: "minecraft:arrow" }
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "nova_structures:adventure/find_pillager_outpost"
+				criterion: ""
+				id: "139B9F21EDB70494"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4D0B5F60919F1219"]
+			icon: {
+				id: "minecraft:chest"
+			}
+			id: "06A55B7DC6E984D2"
+			rewards: [{
+				count: 16
+				id: "60EEFD5CFAC726DC"
+				item: { count: 1, id: "minecraft:emerald" }
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "nova_structures:adventure/loot_illager_hideout"
+				criterion: ""
+				id: "11D592884F8CB806"
+				type: "advancement"
+			}]
+			x: 9.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["06A55B7DC6E984D2"]
+			icon: {
+				id: "minecraft:book"
+			}
+			id: "034954F06284F64C"
+			rewards: [{
+				id: "53BAEC07EF971FFE"
+				type: "xp"
+				xp: 800
+			}]
+			tasks: [{
+				id: "08593257472C1887"
+				type: "checkmark"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["034954F06284F64C"]
+			icon: {
+				id: "minecraft:white_banner"
+			}
+			id: "371BD318EDEAB94B"
+			rewards: [{
+				id: "5B1A056F2CBD159D"
+				type: "xp_levels"
+				xp_levels: 5
+			}
+			{
+				auto: "invisible"
+				command: "/scoreboard objectives add valdgard dummy"
+				id: "307006179C6819A5"
+				permission_level: 2
+				silent: true
+				type: "command"
+			}
+			{
+				auto: "invisible"
+				command: "/scoreboard players set {p} valdgard 3"
+				id: "21CDCBA96C11A716"
+				permission_level: 2
+				silent: true
+				type: "command"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "62463E7C440B50BD"
+				type: "checkmark"
+			}]
+			x: 15.0d
+			y: 0.0d
+		}
+	]
+}

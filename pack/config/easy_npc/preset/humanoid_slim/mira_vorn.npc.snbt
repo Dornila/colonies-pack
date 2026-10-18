@@ -1,0 +1,46 @@
+{
+  PresetMetadata:{
+    author:"Colonies",
+    category:"Quest",
+    created:1792000000000L,
+    description:"Дочь пропавшего картографа. Поставьте у ратуши.",
+    entityTypeId:"easy_npc:humanoid_slim",
+    modified:1792000000000L,
+    name:"Мира Ворн",
+    variantType:"ALEX",
+    version:"1.0.0"
+  },
+  data:{
+    ActionData:{
+      ActionEventSet:{
+        ON_INTERACTION:[{
+          Type:"OPEN_DEFAULT_DIALOG"
+        }]
+      }
+    },
+    ArmorItems:[{},{},{},{}],
+    CustomName:'{"color":"#E080FF","text":"Мира Ворн"}',
+    DialogData:{
+      DialogDataSet:[{Buttons:[{Actions:[{Type:"CLOSE_DIALOG"}],Label:"button_bye",Name:"До встречи"}],Label:"default",Name:"Прибытие",Priority:1,Texts:[{Text:"Вы всё-таки приплыли, @initiator! Я боялась, что корабль не дойдёт.\\n\\nЯ Мира Ворн. Мой отец, магистр Элиас, пропал на этих землях десять лет назад. Всё, что я знаю, я написала в письме: оно в вашей книге квестов, раздел «Сюжет».\\n\\nПрочитайте его, а потом найдите хорошее место для поселения."}]},{Buttons:[{Actions:[{Type:"CLOSE_DIALOG"}],Label:"button_bye",Name:"До встречи"}],Conditions:[{Name:"valdgard",Operation:"EQUALS",Type:"SCOREBOARD",Value:1}],Label:"stage_1",Name:"Акт I",Priority:11,Texts:[{Text:"Как продвигается поселение, @initiator?\\n\\nНам нужна ратуша, строитель и хотя бы пять жителей. Без города здесь не выжить.\\n\\nИ ещё: последнее письмо отца пришло из придорожной таверны. Если наткнётесь на такую, расспросите трактирщика."}]},{Buttons:[{Actions:[{Type:"CLOSE_DIALOG"}],Label:"button_bye",Name:"До встречи"}],Conditions:[{Name:"valdgard",Operation:"EQUALS",Type:"SCOREBOARD",Value:2}],Label:"stage_2",Name:"Акт II",Priority:12,Texts:[{Text:"Дневник отца… Я перечитала первую страницу раз двадцать. «Печати». Что он имел в виду?\\n\\nОн писал о склепах у северной дороги. А в описи снаряжения был порох: экспедиция копала глубоко. Ищите подземелья и алмазные жилы.\\n\\nИ осторожнее с людьми в серых плащах. Говорят, у них на доспехах старый королевский герб."}]},{Buttons:[{Actions:[{Type:"CLOSE_DIALOG"}],Label:"button_bye",Name:"До встречи"}],Conditions:[{Name:"valdgard",Operation:"EQUALS",Type:"SCOREBOARD",Value:3}],Label:"stage_3",Name:"Акт III",Priority:13,Texts:[{Text:"Беженцы с юга говорят, что серые плащи жгут деревни. Мы следующие, @initiator.\\n\\nСтройте сторожевые башни, собирайте ополчение. Город должен вырасти, чтобы его боялись трогать.\\n\\nОтец писал, что у изгнанников есть командир. Он сидит в каменной крепости и помнит короля. Если кто-то и знает правду, то он."}]},{Buttons:[{Actions:[{Type:"CLOSE_DIALOG"}],Label:"button_bye",Name:"До встречи"}],Conditions:[{Name:"valdgard",Operation:"EQUALS",Type:"SCOREBOARD",Value:4}],Label:"stage_4",Name:"Акт IV",Priority:14,Texts:[{Text:"Пять печатей и пять стражей. Король разбудил их, а стража до сих пор платит за это.\\n\\nДвое ждут в Незере: Пламя и Кузня душ. Машина спит под землёй, а Бездна лежит на дне океана.\\n\\nИдите вместе, @initiator. Это не та охота, в которую ходят в одиночку."}]},{Buttons:[{Actions:[{Type:"CLOSE_DIALOG"}],Label:"button_bye",Name:"До встречи"}],Conditions:[{Name:"valdgard",Operation:"EQUALS",Type:"SCOREBOARD",Value:5}],Label:"stage_5",Name:"Акт V",Priority:15,Texts:[{Text:"Отец ушёл за край мира. Один.\\n\\nЯ не прошу его найти. Я прошу дочитать его дневник до конца. Око Эндера покажет дорогу.\\n\\n…Спасибо, что дошли так далеко, @initiator."}]},{Buttons:[{Actions:[{Type:"CLOSE_DIALOG"}],Label:"button_bye",Name:"До встречи"}],Conditions:[{Name:"valdgard",Operation:"EQUALS",Type:"SCOREBOARD",Value:6}],Label:"stage_6",Name:"Эпилог",Priority:16,Texts:[{Text:"«Я не пропал. Я просто ждал, пока появятся вы».\\n\\nЯ выучила эту строчку наизусть, @initiator. Сегодня утром серые плащи подняли над крепостью старый герб. Впервые за сто лет.\\n\\nУ этой земли снова есть люди, которые её помнят. Спасибо вам."}]}],
+      Type:"STANDARD"
+    },
+    EasyNPCVersion:3,
+    HandItems:[{Count:1b,id:"minecraft:writable_book"},{}],
+    Invulnerable:1b,
+    ObjectiveData:{
+      HasObjectives:1b,
+      ObjectiveDataSet:[{
+        Type:"LOOK_AT_PLAYER"
+      },{
+        Type:"LOOK_AT_RESET"
+      }]
+    },
+    PersistenceRequired:1b,
+    PresetUUID:[I;-1889900389,-1845433261,1979817859,719185172],
+    SkinData:{
+      Type:"DEFAULT"
+    },
+    VariantType:"ALEX",
+    id:"easy_npc:humanoid_slim"
+  }
+}

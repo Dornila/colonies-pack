@@ -1,0 +1,12 @@
+resourcePacks:["vanilla","mod_resources","file/Fancy Crops v1.3.zip","file/LowOnFire-v26.2.zip","file/colonies-fixes"]
+incompatibleResourcePacks:[]
+renderDistance:8
+simulationDistance:6
+graphicsMode:0
+renderClouds:"false"
+particles:1
+entityShadows:false
+biomeBlendRadius:1
+mipmapLevels:2
+maxFps:75
+enableVsync:false

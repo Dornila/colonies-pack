@@ -1,0 +1,191 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "story_1"
+	group: "39116B943AB5A383"
+	icon: {
+		id: "minecolonies:blockhuttownhall"
+	}
+	id: "6BBBFACE0982DDB2"
+	order_index: 6
+	quests: [
+		{
+			icon: {
+				id: "minecraft:writable_book"
+			}
+			id: "14919EC0EF8899ED"
+			rewards: [{
+				count: 16
+				id: "5A231E90A71E438A"
+				item: { count: 1, id: "minecraft:bread" }
+				type: "item"
+			}
+			{
+				id: "628C110F2C8D538C"
+				item: { count: 1, id: "minecraft:compass" }
+				type: "item"
+			}
+			{
+				auto: "invisible"
+				command: "/scoreboard objectives add valdgard dummy"
+				id: "2DC5276A49657A6B"
+				permission_level: 2
+				silent: true
+				type: "command"
+			}
+			{
+				auto: "invisible"
+				command: "/scoreboard players set {p} valdgard 1"
+				id: "58F42E72E3B6C3B1"
+				permission_level: 2
+				silent: true
+				type: "command"
+			}]
+			shape: "gear"
+			size: 2.5d
+			tasks: [{
+				id: "4187E8ABA014AF61"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["14919EC0EF8899ED"]
+			icon: {
+				id: "minecolonies:blockhuttownhall"
+			}
+			id: "0DE4EDB063BA6C0E"
+			rewards: [{
+				id: "3BDB7328CC70F63E"
+				type: "xp"
+				xp: 300
+			}]
+			tasks: [{
+				advancement: "minecolonies:minecolonies/place_townhall"
+				criterion: ""
+				id: "1D8B13ED1FE29D45"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0DE4EDB063BA6C0E"]
+			icon: {
+				id: "minecolonies:blockhutbuilder"
+			}
+			id: "003E7F2BEE31F210"
+			rewards: [{
+				count: 32
+				id: "0CDE161ACC94FEE8"
+				item: { count: 1, id: "minecraft:oak_log" }
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "minecolonies:minecolonies/build_builder"
+				criterion: ""
+				id: "3486EDD0BA0F1A5B"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["003E7F2BEE31F210"]
+			icon: {
+				id: "minecraft:player_head"
+			}
+			id: "66D93EF69FC6858E"
+			rewards: [{
+				count: 8
+				id: "18084B9641050DE4"
+				item: { count: 1, id: "minecraft:emerald" }
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "minecolonies:minecolonies/colony_population_5"
+				criterion: ""
+				id: "7BE677C259280B60"
+				type: "advancement"
+			}]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0DE4EDB063BA6C0E"]
+			icon: {
+				id: "minecraft:barrel"
+			}
+			id: "539CEAF1D75D5583"
+			rewards: [{
+				count: 8
+				id: "5EE71E4851E9873E"
+				item: { count: 1, id: "minecraft:cooked_beef" }
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "nova_structures:adventure/find_tavern"
+				criterion: ""
+				id: "321DE55B5BAAA022"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["539CEAF1D75D5583"]
+			icon: {
+				id: "minecraft:book"
+			}
+			id: "0977EBDE091192C0"
+			rewards: [{
+				id: "779D017F6625431B"
+				type: "xp"
+				xp: 500
+			}]
+			tasks: [{
+				id: "22EAE24F01DDC4E0"
+				type: "checkmark"
+			}]
+			x: 9.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["66D93EF69FC6858E", "0977EBDE091192C0"]
+			icon: {
+				id: "minecraft:filled_map"
+			}
+			id: "7A4E2AB5077ED088"
+			rewards: [{
+				id: "0BC3F13C5DB8F08F"
+				type: "xp_levels"
+				xp_levels: 5
+			}
+			{
+				auto: "invisible"
+				command: "/scoreboard objectives add valdgard dummy"
+				id: "7F18D68288AC83A8"
+				permission_level: 2
+				silent: true
+				type: "command"
+			}
+			{
+				auto: "invisible"
+				command: "/scoreboard players set {p} valdgard 2"
+				id: "33B23DED93CC5DFC"
+				permission_level: 2
+				silent: true
+				type: "command"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "32A05D729AAD608B"
+				type: "checkmark"
+			}]
+			x: 12.0d
+			y: -1.5d
+		}
+	]
+}

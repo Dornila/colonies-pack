@@ -1,0 +1,46 @@
+{
+  PresetMetadata:{
+    author:"Colonies",
+    category:"Quest",
+    created:1792000000000L,
+    description:"Трактирщик. Поставьте в таверне колонии.",
+    entityTypeId:"easy_npc:humanoid",
+    modified:1792000000000L,
+    name:"Трактирщик Бруно",
+    variantType:"STEVE",
+    version:"1.0.0"
+  },
+  data:{
+    ActionData:{
+      ActionEventSet:{
+        ON_INTERACTION:[{
+          Type:"OPEN_DEFAULT_DIALOG"
+        }]
+      }
+    },
+    ArmorItems:[{},{},{},{}],
+    CustomName:'{"color":"#E8B35A","text":"Трактирщик Бруно"}',
+    DialogData:{
+      DialogDataSet:[{Buttons:[{Actions:[{Type:"CLOSE_DIALOG"}],Label:"button_bye",Name:"До встречи"}],Label:"default",Name:"Знакомство",Priority:1,Texts:[{Text:"Заходи, @initiator, присаживайся. Эль тёплый, новости холодные.\\n\\nНовенький? Тогда сначала строй дом. В этих краях без крыши и стен долго не живут."}]},{Buttons:[{Actions:[{Type:"CLOSE_DIALOG"}],Label:"button_bye",Name:"До встречи"}],Conditions:[{Name:"valdgard",Operation:"EQUALS",Type:"SCOREBOARD",Value:1}],Label:"stage_1",Name:"Акт I",Priority:11,Texts:[{Text:"Картограф, говоришь? Ворн? Был такой, лет десять назад. Сидел вон в том углу и рисовал карты до рассвета.\\n\\nТаверн у дорог много, и в каждой кто-нибудь что-нибудь слышал. Поищи старые придорожные таверны: он мог оставить там записи."}]},{Buttons:[{Actions:[{Type:"CLOSE_DIALOG"}],Label:"button_bye",Name:"До встречи"}],Conditions:[{Name:"valdgard",Operation:"EQUALS",Type:"SCOREBOARD",Value:2}],Label:"stage_2",Name:"Акт II",Priority:12,Texts:[{Text:"Склепы у дорог? Лучше туда без факелов не соваться, там пауки размером с телёнка.\\n\\nА серые плащи держат аванпосты: деревянные башни с флагами на холмах. И тайники в лесах. Ворн как-то говорил, что у них стоит поучиться прятать вещи."}]},{Buttons:[{Actions:[{Type:"CLOSE_DIALOG"}],Label:"button_bye",Name:"До встречи"}],Conditions:[{Name:"valdgard",Operation:"EQUALS",Type:"SCOREBOARD",Value:3}],Label:"stage_3",Name:"Акт III",Priority:13,Texts:[{Text:"Слышал, серые плащи готовят набег. Держи стражу наготове, @initiator.\\n\\nИх крепость каменная, большая, на равнинах. А командир, говорят, удрал в старый особняк в тёмном лесу. Картографы в деревнях продают карты к таким местам."}]},{Buttons:[{Actions:[{Type:"CLOSE_DIALOG"}],Label:"button_bye",Name:"До встречи"}],Conditions:[{Name:"valdgard",Operation:"EQUALS",Type:"SCOREBOARD",Value:4}],Label:"stage_4",Name:"Акт IV",Priority:14,Texts:[{Text:"Ты серьёзно собрался будить… то есть добивать Древних? Тогда слушай.\\n\\nВ Незере есть арена, где всё горит, и кузня, где воют души. Под землёй стоит старая фабрика, а под морем лежит затонувший город. Возвращайся живым, а то кто мне будет долг отдавать."}]},{Buttons:[{Actions:[{Type:"CLOSE_DIALOG"}],Label:"button_bye",Name:"До встречи"}],Conditions:[{Name:"valdgard",Operation:"EQUALS",Type:"SCOREBOARD",Value:5}],Label:"stage_5",Name:"Акт V",Priority:15,Texts:[{Text:"Край, значит. Последний, кто туда пошёл, был твой картограф.\\n\\nНалью тебе за счёт заведения, когда вернёшься. Обещаю."}]},{Buttons:[{Actions:[{Type:"CLOSE_DIALOG"}],Label:"button_bye",Name:"До встречи"}],Conditions:[{Name:"valdgard",Operation:"EQUALS",Type:"SCOREBOARD",Value:6}],Label:"stage_6",Name:"Эпилог",Priority:16,Texts:[{Text:"А вот и герой! Вся таверна только о тебе и говорит, @initiator.\\n\\nДаже серые плащи заходили. Тихие, вежливые. Заказали эль за здоровье картографа."}]}],
+      Type:"STANDARD"
+    },
+    EasyNPCVersion:3,
+    HandItems:[{Count:1b,id:"minecraft:potion"},{}],
+    Invulnerable:1b,
+    ObjectiveData:{
+      HasObjectives:1b,
+      ObjectiveDataSet:[{
+        Type:"LOOK_AT_PLAYER"
+      },{
+        Type:"LOOK_AT_RESET"
+      }]
+    },
+    PersistenceRequired:1b,
+    PresetUUID:[I;530091842,-1530203081,-1842647496,741895291],
+    SkinData:{
+      Type:"DEFAULT"
+    },
+    VariantType:"STEVE",
+    id:"easy_npc:humanoid"
+  }
+}

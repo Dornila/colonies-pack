@@ -1,0 +1,290 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "story_5"
+	group: "39116B943AB5A383"
+	icon: {
+		id: "minecraft:dragon_head"
+	}
+	id: "6C116A6EE050C76F"
+	order_index: 10
+	quests: [
+		{
+			dependencies: ["2626A1AC7014C12D"]
+			icon: {
+				id: "minecraft:ender_eye"
+			}
+			id: "79D1DE8B41EBD89F"
+			rewards: [{
+				count: 8
+				id: "728F44C0106719C8"
+				item: { count: 1, id: "minecraft:ender_pearl" }
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				advancement: "minecraft:story/follow_ender_eye"
+				criterion: ""
+				id: "37353B869D23739A"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["79D1DE8B41EBD89F"]
+			icon: {
+				id: "minecraft:end_portal_frame"
+			}
+			id: "112634FF50AD96E1"
+			rewards: [{
+				id: "7A17D64E36D757B3"
+				type: "xp"
+				xp: 1000
+			}]
+			tasks: [{
+				advancement: "minecraft:story/enter_the_end"
+				criterion: ""
+				id: "2693148C9B5D600C"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["112634FF50AD96E1"]
+			icon: {
+				id: "minecraft:iron_sword"
+			}
+			id: "2EA1093AD2B14601"
+			shape: "square"
+			size: 0.8d
+			tasks: [{
+				advancement: "minecraft:end/kill_dragon"
+				criterion: ""
+				id: "51F77BC1AFC55405"
+				type: "advancement"
+			}]
+			x: 4.5d
+			y: -0.7d
+		}
+		{
+			dependencies: ["112634FF50AD96E1"]
+			icon: {
+				id: "minecraft:shield"
+			}
+			id: "4F628D684638EBD6"
+			shape: "square"
+			size: 0.8d
+			tasks: [{
+				id: "70D8F7912E9C993A"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 0.7d
+		}
+		{
+			dependencies: ["2EA1093AD2B14601", "4F628D684638EBD6"]
+			min_required_dependencies: 1
+			icon: {
+				id: "minecraft:dragon_head"
+			}
+			id: "496D7F55A00B7719"
+			rewards: [{
+				id: "10222842F0909BFF"
+				type: "xp_levels"
+				xp_levels: 20
+			}]
+			tasks: [{
+				id: "4246AE503EE50699"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["496D7F55A00B7719"]
+			icon: {
+				id: "minecraft:purpur_block"
+			}
+			id: "272B8F5AA32A61B1"
+			rewards: [{
+				id: "0EB13915A153B35F"
+				type: "xp"
+				xp: 1000
+			}]
+			tasks: [{
+				advancement: "cataclysm:find_ruined_citadel"
+				criterion: ""
+				id: "4B75635C0740EB75"
+				type: "advancement"
+			}]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["272B8F5AA32A61B1"]
+			icon: {
+				id: "minecraft:iron_sword"
+			}
+			id: "2EC98FBF504C05A1"
+			shape: "square"
+			size: 0.8d
+			tasks: [{
+				advancement: "cataclysm:kill_ender_guardian"
+				criterion: ""
+				id: "6B9FDFAF388B2E34"
+				type: "advancement"
+			}]
+			x: 10.5d
+			y: -0.7d
+		}
+		{
+			dependencies: ["272B8F5AA32A61B1"]
+			icon: {
+				id: "minecraft:shield"
+			}
+			id: "7E26B5334AECEC44"
+			shape: "square"
+			size: 0.8d
+			tasks: [{
+				id: "23A492026F019363"
+				type: "checkmark"
+			}]
+			x: 10.5d
+			y: 0.7d
+		}
+		{
+			dependencies: ["2EC98FBF504C05A1", "7E26B5334AECEC44"]
+			min_required_dependencies: 1
+			icon: {
+				id: "minecraft:end_crystal"
+			}
+			id: "2C532E9A1F38B35E"
+			rewards: [{
+				id: "59E497E96E2D87C2"
+				type: "xp_levels"
+				xp_levels: 25
+			}]
+			tasks: [{
+				id: "4D2FF87591E1CB86"
+				type: "checkmark"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2C532E9A1F38B35E"]
+			icon: {
+				id: "minecraft:written_book"
+			}
+			id: "5C9ECC41DD2F2B3C"
+			rewards: [{
+				id: "0C10060871CD59B8"
+				item: { count: 1, id: "minecraft:nether_star" }
+				type: "item"
+			}
+			{
+				id: "1604A13DD0926B1D"
+				type: "xp_levels"
+				xp_levels: 30
+			}
+			{
+				auto: "invisible"
+				command: "/scoreboard objectives add valdgard dummy"
+				id: "13875CBE9D860662"
+				permission_level: 2
+				silent: true
+				type: "command"
+			}
+			{
+				auto: "invisible"
+				command: "/scoreboard players set {p} valdgard 6"
+				id: "3E174DF5AF5084B0"
+				permission_level: 2
+				silent: true
+				type: "command"
+			}]
+			shape: "hexagon"
+			size: 2.5d
+			tasks: [{
+				id: "28B003810AB5240F"
+				type: "checkmark"
+			}]
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5C9ECC41DD2F2B3C"]
+			icon: {
+				id: "minecolonies:blockhuttownhall"
+			}
+			id: "4F071683A9847E14"
+			rewards: [{
+				id: "18AB2BA0490D0712"
+				item: { count: 1, id: "minecraft:diamond_block" }
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "minecolonies:minecolonies/build_town_hall_5"
+				criterion: ""
+				id: "35F06FD99FC923C2"
+				type: "advancement"
+			}]
+			x: 18.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5C9ECC41DD2F2B3C"]
+			icon: {
+				id: "minecraft:iron_sword"
+			}
+			id: "17B1827491F56003"
+			shape: "square"
+			size: 0.8d
+			tasks: [{
+				advancement: "cataclysm:kill_all_bosses"
+				criterion: ""
+				id: "43A6024169863199"
+				type: "advancement"
+			}]
+			x: 16.5d
+			y: 1.3d
+		}
+		{
+			dependencies: ["5C9ECC41DD2F2B3C"]
+			icon: {
+				id: "minecraft:shield"
+			}
+			id: "6244F9F1F56A292B"
+			shape: "square"
+			size: 0.8d
+			tasks: [{
+				id: "7273597C042D5B1E"
+				type: "checkmark"
+			}]
+			x: 16.5d
+			y: 2.7d
+		}
+		{
+			dependencies: ["17B1827491F56003", "6244F9F1F56A292B"]
+			min_required_dependencies: 1
+			icon: {
+				id: "minecraft:beacon"
+			}
+			id: "68B9FC4C084E8B5D"
+			rewards: [{
+				id: "5FEEB98AB16D073E"
+				item: { count: 1, id: "minecraft:netherite_ingot" }
+				type: "item"
+			}]
+			tasks: [{
+				id: "6FBE9871B90D155E"
+				type: "checkmark"
+			}]
+			x: 18.0d
+			y: 2.0d
+		}
+	]
+}

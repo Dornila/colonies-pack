@@ -1,0 +1,7 @@
+# В репозиторий идут только паки packwiz (их скачивают игроки при запуске игры)
+/*
+!/pack/
+!/pack-lite/
+!/.gitignore
+!/README.md
+!/.gitattributes

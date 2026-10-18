@@ -1,0 +1,13 @@
+name = "Colonies"
+author = "Dornila"
+version = "1.0.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "291e7fffe0fcc65a099a1285dbc6ea94b5932fa575dc0e4bb470e432e3ff7b1f"
+
+[versions]
+minecraft = "1.21.1"
+neoforge = "21.1.262"

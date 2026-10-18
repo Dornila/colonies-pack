@@ -1,0 +1,98 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "union"
+	group: "7EF632FF72129737"
+	icon: {
+		id: "minecraft:white_banner"
+	}
+	id: "4A3805A1255418C0"
+	order_index: 5
+	quests: [
+		{
+			icon: {
+				id: "minecraft:writable_book"
+			}
+			id: "318CD2A505CAFCCB"
+			rewards: [{
+				count: 8
+				id: "58E71AEA75AFEBAF"
+				item: { count: 1, id: "minecraft:emerald" }
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "2EC5BE3619F7EBD2"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["318CD2A505CAFCCB"]
+			icon: {
+				id: "minecraft:white_banner"
+			}
+			id: "720C6314F2E895A3"
+			tasks: [{
+				id: "7D4E36CE81B3D156"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["720C6314F2E895A3"]
+			icon: {
+				id: "minecraft:rail"
+			}
+			id: "4E1488CB8A688D58"
+			rewards: [{
+				id: "3F7F23CCF6F9A967"
+				type: "xp"
+				xp: 300
+			}]
+			tasks: [{
+				id: "0F30EDD26CF69762"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["318CD2A505CAFCCB"]
+			icon: {
+				id: "minecraft:shield"
+			}
+			id: "70E206B0588184A8"
+			tasks: [{
+				id: "4E833665970B3F5D"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["70E206B0588184A8"]
+			icon: {
+				id: "minecraft:crossbow"
+			}
+			id: "217167A67E523C62"
+			rewards: [{
+				count: 16
+				id: "3ECBBA5F4CBB9FEA"
+				item: { count: 1, id: "minecraft:emerald" }
+				type: "item"
+			}]
+			tasks: [{
+				entity: "minecraft:pillager"
+				id: "0C632E0AE7F824EA"
+				type: "kill"
+				value: 10L
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+	]
+}

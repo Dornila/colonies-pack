@@ -1,0 +1,188 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "start"
+	group: "7EF632FF72129737"
+	icon: {
+		id: "minecraft:oak_sapling"
+	}
+	id: "5D36E99F22266A0B"
+	order_index: 0
+	quests: [
+		{
+			icon: {
+				id: "minecraft:book"
+			}
+			id: "41E4F2ED8F89697F"
+			rewards: [{
+				count: 8
+				id: "7E60C29BCFC647F1"
+				item: { count: 1, id: "minecraft:bread" }
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "5F511AD9A0AB26AC"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["41E4F2ED8F89697F"]
+			icon: {
+				id: "minecraft:oak_log"
+			}
+			id: "572DBD3EA9F7E03C"
+			rewards: [{
+				count: 4
+				id: "51108B5CC3FD9D7F"
+				item: { count: 1, id: "minecraft:apple" }
+				type: "item"
+			}]
+			tasks: [{
+				id: "53FA8286A4A714D3"
+				item: { count: 1, id: "minecraft:crafting_table" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["572DBD3EA9F7E03C"]
+			id: "461CE977690383A8"
+			rewards: [{
+				count: 16
+				id: "57EA927D0FBBC1B9"
+				item: { count: 1, id: "minecraft:torch" }
+				type: "item"
+			}]
+			tasks: [{
+				id: "5F44E87F00D38174"
+				item: { count: 1, id: "minecraft:stone_pickaxe" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["461CE977690383A8"]
+			id: "38D682674BE4BE01"
+			rewards: [{
+				id: "4D0334B2E4811B6A"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				count: 16L
+				id: "2DD0DECC78DB4C1E"
+				item: { count: 1, id: "minecraft:iron_ingot" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["572DBD3EA9F7E03C"]
+			icon: {
+				id: "minecraft:red_bed"
+			}
+			id: "0C9CD80B2C97BFA5"
+			tasks: [{
+				id: "347576CF903A586D"
+				item: { count: 1, id: "minecraft:red_bed" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0C9CD80B2C97BFA5"]
+			id: "4B12B5DFB51F55BF"
+			tasks: [{
+				id: "521C8B5CAA131079"
+				item: { count: 1, id: "comforts:sleeping_bag_red" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["38D682674BE4BE01"]
+			id: "6CA6BFEEF41C2ED8"
+			rewards: [{
+				count: 4
+				id: "51185258F3D71CEA"
+				item: { count: 1, id: "minecraft:leather" }
+				type: "item"
+			}]
+			tasks: [{
+				id: "4BC3B5435C181AB0"
+				item: { count: 1, id: "sophisticatedbackpacks:backpack" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["41E4F2ED8F89697F"]
+			icon: {
+				id: "gravestone:gravestone"
+			}
+			id: "1D8580E886BFC778"
+			tasks: [{
+				id: "3BB15AE464F7585A"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["41E4F2ED8F89697F"]
+			icon: {
+				id: "minecraft:map"
+			}
+			id: "227303E287B8D17B"
+			rewards: [{
+				id: "372D99C41ED99506"
+				item: { count: 1, id: "minecraft:compass" }
+				type: "item"
+			}]
+			tasks: [{
+				id: "35D794C7A2FDA818"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["38D682674BE4BE01"]
+			id: "154814510D9604AE"
+			rewards: [{
+				count: 8
+				id: "07BA546158E4B89F"
+				item: { count: 1, id: "minecraft:bread" }
+				type: "item"
+			}]
+			tasks: [{
+				id: "4D4DFAC980381DE4"
+				item: { count: 1, id: "farmersdelight:cooking_pot" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["154814510D9604AE"]
+			id: "61A22BEBBA0FC478"
+			tasks: [{
+				id: "5497D2953B41F8B5"
+				item: { count: 1, id: "brewinandchewin:keg" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 2.0d
+		}
+	]
+}
